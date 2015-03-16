@@ -16,6 +16,9 @@ Here is a rails application with just Bootstrap Sass set up properly
         @import "home";
 
 
+## main.scss
+
+
 ## Gemfile
         source 'https://rubygems.org'
 
@@ -73,3 +76,4 @@ Here is a rails application with just Bootstrap Sass set up properly
           get 'about/index'
           get 'home/index'
         end
+
