@@ -8,7 +8,14 @@
 </head>
 
 <body>
+  <!-- <br><br><br> -->
+
+<% if params[:controller] == 'home' %>
   <%= render 'partials/jumbotron' %> <!-- layouts -->
+<% end %>
+
+
+
 
 <div class="container">
   <%= yield %>
