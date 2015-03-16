@@ -8,22 +8,20 @@
 </head>
 
 <body>
+  <%= render 'partials/jumbotron' %> <!-- layouts -->
+
+<div class="container">
+  <%= yield %>
+</div>
 
 
+<div class="container">
+  <%= render 'partials/footer' %> <!-- layouts -->
+</div>
 
-
-<%= render 'partials/jumbotron' %> <!-- move code out -->
-
-
-<%= yield %>
-
-      <hr>
-
-      <footer>
-        <p>&copy; Company 2014</p>
-      </footer>
-    </div> <!-- /container -->
 
 
 </body>
 </html>
+
+
