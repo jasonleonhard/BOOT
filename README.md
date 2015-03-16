@@ -1,7 +1,7 @@
 Here is a rails application with just Bootstrap Sass set up properly
 
 
-# application.scss
+## application.scss
 
         /*
         *= require_self
@@ -16,7 +16,7 @@ Here is a rails application with just Bootstrap Sass set up properly
         @import "home";
 
 
-# Gemfile
+## Gemfile
         source 'https://rubygems.org'
 
 
@@ -66,3 +66,10 @@ Here is a rails application with just Bootstrap Sass set up properly
           gem 'spring'
         end
 
+## routes.rb
+        Rails.application.routes.draw do
+          root 'home#index'
+
+          get 'about/index'
+          get 'home/index'
+        end
