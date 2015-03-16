@@ -58,9 +58,32 @@
               <li><%= link_to "About", about_path %></li>
             </ul>
 
-        </div><!--/.navbar-collapse -->
-      </div>
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="dropdown btn btn-right" style="background:black color:grey">
+    <button class="btn" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+    </ul>
+  </div>
+   </div>
+  </div><!--/.navbar-collapse -->
     </nav>
+
+
+
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
