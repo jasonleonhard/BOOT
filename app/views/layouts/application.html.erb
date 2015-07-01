@@ -10,13 +10,13 @@
 <body>
   <!-- <br><br><br> -->
 
+
 <% if params[:controller] == 'home' %>
-  <%= render 'partials/jumbotron' %> <!-- layouts -->
+  <%= render 'partials/jumbotron' %> <!-- this is in question..... jumbotron... layouts -->
 <% end %>
 
-
-
-
+<!-- Home#index
+Find me in app/views/home/index.html.erb     and About button -->
 <div class="container">
   <%= yield %>
 </div>
