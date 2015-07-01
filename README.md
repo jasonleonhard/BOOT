@@ -1,6 +1,5 @@
 Here is a rails application with just Bootstrap Sass set up properly
 
-
 ## application.scss
 
         /*
@@ -15,13 +14,11 @@ Here is a rails application with just Bootstrap Sass set up properly
         @import "about";
         @import "home";
 
-
 ## main.scss
 
 
 ## Gemfile
         source 'https://rubygems.org'
-
 
         # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
         gem 'rails', '4.2.0'
@@ -31,7 +28,6 @@ Here is a rails application with just Bootstrap Sass set up properly
         gem 'sass-rails', '~> 5.0'
         gem 'bootstrap-sass'
         gem "autoprefixer-rails"
-
 
         # Use Uglifier as compressor for JavaScript assets
         gem 'uglifier', '>= 1.3.0'
@@ -77,3 +73,5 @@ Here is a rails application with just Bootstrap Sass set up properly
           get 'home/index'
         end
 
+#### remember
+    You can always (temporarily) remove stylesheets to help orient yourself
