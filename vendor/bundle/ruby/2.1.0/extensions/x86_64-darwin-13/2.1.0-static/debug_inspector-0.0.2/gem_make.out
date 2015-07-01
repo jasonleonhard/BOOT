@@ -1,0 +1,12 @@
+/Users/leonharj/.rbenv/versions/2.1.6/bin/ruby extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20150701-83727-1clz0db
+installing default debug_inspector libraries
