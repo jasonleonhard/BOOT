@@ -73,5 +73,9 @@ Here is a rails application with just Bootstrap Sass set up properly
           get 'home/index'
         end
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5f56b6b1812224500ff402650afa9a361415b16c
 #### remember
     You can always (temporarily) remove stylesheets to help orient yourself

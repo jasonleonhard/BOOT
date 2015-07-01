@@ -1,17 +1,18 @@
-Rails.application.routes.draw do
-  # You can have the root of your site routed with "root"
+Rails.application.routes.draw do  
   root 'home#index'
-
 #  get 'about/index'
   get 'about' => 'about#index'
-
   get 'home/index'
 
+  
+  #root 'articles#index'
+  resources :about
+  resources :articles
+  resources :home
+  resources :layouts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
