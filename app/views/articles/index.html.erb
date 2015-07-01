@@ -1,0 +1,55 @@
+<h1>Listing articles</h1>
+ 
+<!-- option 1 -->
+<!-- <table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+ 
+  < % @articles.each do |article| %>
+    <tr>
+      <td>< %= article.title %></td>
+      <td>< % = article.text %></td>
+    </tr>
+  < % end %>
+</table>
+ -->
+
+<!-- option 2 -->
+<!-- <table>
+  < % @articles.each do |article| %>
+    <tr>
+      <th>Title</th>
+      <td>< %= article.title %></td>
+      <th>Text</th>    
+      <td>< %= article.text %></td>
+    </tr>
+  < % end %>
+</table>
+ -->
+
+<!-- option 3 -->
+<table>
+  <tr>
+    <td><b>Title</b></td>
+    <td><b>Text</b></td>
+    <td colspan="3"></td>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Destroy', article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'New', new_article_path %>
+<!-- < % = link_to 'edit', edit_article_path % > -->
